@@ -636,3 +636,136 @@ header {
     fill: #fff;
     border: 1px solid var(--active-hover-color);
 }
+
+.form-subscribe {
+    width: 453px;
+    margin-left: 80px;
+    display: flex;
+    gap: 24px;
+}
+
+.label-subscribe {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    gap: 16px;
+}
+
+.input-subscribe {
+    width: 264px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: var(--brand-color);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.button-subscribe {
+    width: 165px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background-color: var(--brand-logo-color);
+    margin-top: 40px;
+}
+
+.modal-header {
+    color: var(--brand-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 16px;
+}
+
+.modal-form {
+    margin: 0 24px 16px 24px;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.modal-input {
+    margin-top: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #2e2f4266;
+    height: 40px;
+}
+
+.modal-input:focus {
+    border: 1px solid var(--brand-logo-color);
+} /* dlaczego nie działa */
+
+.modal-textarea {
+    width: 360px;
+    height: 120px;
+    resize: none;
+    margin-bottom: 16px;
+}
+
+.modal-button-send {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--brand-logo-color);
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    margin-left: 95px;
+    margin-top: 24px;
+}
+
+.checkbox-label {
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: flex;
+    gap: 8px;
+}
+
+.privacy-policy-link {
+    color: var(--brand-logo-color);
+    text-decoration: underline;
+}
+
+.send-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    inset: 8px 24px 8px auto;
+}
+
+.modal-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 15px;
+}
