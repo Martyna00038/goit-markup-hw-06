@@ -680,6 +680,9 @@ header {
     border-radius: 4px;
     background-color: var(--brand-logo-color);
     margin-top: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .modal-header {
@@ -717,6 +720,7 @@ header {
 
 .modal-input:not([type="checkbox"]) {
     border: none;
+    outline: transparent;
 }
 
 .input-wrapper:focus {
@@ -734,7 +738,7 @@ header {
     border-color: var(--brand-logo-color);
 }
 
-.input-wrapper:focus .modal-icon {
+.input-wrapper:focus-within .modal-icon {
     fill: var(--brand-logo-color); /* nie działa */
 }
 
@@ -747,6 +751,11 @@ header {
     border: 1px solid #2e2f4266;
     border-radius: 4px;
     padding: 8px 16px;
+    outline: transparent;
+}
+
+.modal-textarea:focus {
+    border-color: var(--brand-logo-color);
 }
 
 .modal-button-send {
@@ -770,12 +779,6 @@ header {
 
 .send-icon {
     fill: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.send-svg {
     width: 24px;
     height: 24px;
 }
@@ -787,6 +790,24 @@ header {
     letter-spacing: 0.04em;
     display: flex;
     gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+
+.checkbox-icon {
+    fill: none;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2e2f4266;
+    transition: background-color var(--transition);
+}
+.checkbox:checked + .checkbox-icon {
+    background-color: var(--active-hover-color);
 }
 
 .privacy-policy-link {
