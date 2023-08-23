@@ -521,11 +521,13 @@
                         </label>
                         <button type="submit" class="button-subscribe">
                             Subscribe
-                            <svg class="send-icon">
-                                <use
-                                    href="images/icons.svg#icon-plane-icon"
-                                ></use>
-                            </svg>
+                            <div class="send-icon">
+                                <svg class="send-svg">
+                                    <use
+                                        href="images/icons.svg#icon-plane-icon"
+                                    ></use>
+                                </svg>
+                            </div>
                         </button>
                     </form>
                 </div>
@@ -550,41 +552,51 @@
                 <form class="modal-form">
                     <label for="name" class="modal-label"
                         >Name
-                        <input
-                            name="name"
-                            id="name"
-                            type="text"
-                            class="modal-input"
-                        />
-                        <svg class="modal-icon">
-                            <use href="images/icons.svg#icon-person-icon"></use>
-                        </svg>
+                        <div class="input-wrapper">
+                            <svg class="modal-icon">
+                                <use
+                                    href="images/icons.svg#icon-person-icon"
+                                ></use>
+                            </svg>
+                            <input
+                                name="name"
+                                id="name"
+                                type="text"
+                                class="modal-input"
+                            />
+                        </div>
                     </label>
                     <label for="phone" class="modal-label">
                         Phone
-                        <input
-                            name="phone"
-                            id="phone"
-                            type="number"
-                            class="modal-input"
-                        />
-                        <svg class="modal-icon">
-                            <use
-                                href="./images/icons.svg#icon-phone-icon"
-                            ></use>
-                        </svg>
+                        <div class="input-wrapper">
+                            <svg class="modal-icon">
+                                <use
+                                    href="images/icons.svg#icon-phone-icon"
+                                ></use>
+                            </svg>
+                            <input
+                                name="phone"
+                                id="phone"
+                                type="tel"
+                                class="modal-input"
+                            />
+                        </div>
                     </label>
                     <label for="email-contact" class="modal-label">
                         Email
-                        <input
-                            name="email"
-                            id="email-contact"
-                            type="email"
-                            class="modal-input"
-                        />
-                        <svg class="modal-icon">
-                            <use href="./images/icons.svg#icon-mail-icon"></use>
-                        </svg>
+                        <div class="input-wrapper">
+                            <svg class="modal-icon">
+                                <use
+                                    href="images/icons.svg#icon-mail-icon"
+                                ></use>
+                            </svg>
+                            <input
+                                name="email"
+                                id="email-contact"
+                                type="email"
+                                class="modal-input"
+                            />
+                        </div>
                     </label>
                     <label for="comment" class="modal-label">
                         Comment
@@ -593,7 +605,7 @@
                             id="comment"
                             type="text"
                             placeholder="Text input"
-                            class="modal-input modal-textarea"
+                            class="modal-textarea"
                         ></textarea>
                     </label>
                     <label for="user-agreement" class="checkbox-label">

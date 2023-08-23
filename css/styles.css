@@ -707,23 +707,46 @@ header {
     letter-spacing: 0.04em;
 }
 
-.modal-input {
-    margin-top: 4px;
-    padding: 8px 16px;
-    border-radius: 4px;
+.input-wrapper {
+    display: flex;
     border: 1px solid #2e2f4266;
-    height: 40px;
+    padding: 8px 16px;
+    margin-top: 4px;
+    border-radius: 4px;
 }
 
-.modal-input:focus {
+.modal-input:not([type="checkbox"]) {
+    border: none;
+}
+
+.input-wrapper:focus {
     border: 1px solid var(--brand-logo-color);
-} /* dlaczego nie działa */
+}
+
+.modal-icon {
+    width: 18px;
+    height: 24px;
+    fill: var(--brand-color);
+    transition: fill var(--transition);
+}
+
+.input-wrapper:focus-within {
+    border-color: var(--brand-logo-color);
+}
+
+.input-wrapper:focus .modal-icon {
+    fill: var(--brand-logo-color); /* nie działa */
+}
 
 .modal-textarea {
     width: 360px;
     height: 120px;
     resize: none;
-    margin-bottom: 16px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #2e2f4266;
+    border-radius: 4px;
+    padding: 8px 16px;
 }
 
 .modal-button-send {
@@ -738,6 +761,23 @@ header {
     border-radius: 4px;
     margin-left: 95px;
     margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 24px;
+}
+
+.send-icon {
+    fill: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-svg {
+    width: 24px;
+    height: 24px;
 }
 
 .checkbox-label {
@@ -752,20 +792,4 @@ header {
 .privacy-policy-link {
     color: var(--brand-logo-color);
     text-decoration: underline;
-}
-
-.send-icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    inset: 8px 24px 8px auto;
-}
-
-.modal-icon {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    transform: translateY(-50%);
-    top: 50%;
-    left: 15px;
 }
