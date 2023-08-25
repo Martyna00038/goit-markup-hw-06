@@ -795,6 +795,7 @@ header {
 }
 
 .checkbox-icon {
+    fill: #fff;
     border-radius: 2px;
     width: 16px;
     height: 16px;
@@ -802,13 +803,11 @@ header {
     transition: background-color var(--transition);
 }
 
-.modal-checkbox:checked + .modal-check-icon {
+.modal-checkbox:checked + .checkbox-label > .modal-check-icon {
     background-color: var(--active-hover-color);
     fill: #fff;
     border: none;
     border-radius: 2px;
-    border: 1px solid #2e2f4266;
-    margin-right: 8px;
     align-items: center;
     justify-content: center;
     transition: background-color var(--transition);
