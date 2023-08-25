@@ -802,7 +802,7 @@ header {
     transition: background-color var(--transition);
 }
 
-.modal-checkbox:checked + .checkbox-label {
+.modal-checkbox:checked + .modal-check-icon {
     background-color: var(--active-hover-color);
     fill: #fff;
     border: none;
